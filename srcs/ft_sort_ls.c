@@ -6,7 +6,7 @@
 /*   By: vmartins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/26 13:20:09 by vmartins          #+#    #+#             */
-/*   Updated: 2017/08/21 11:24:17 by vmartins         ###   ########.fr       */
+/*   Updated: 2017/09/21 16:28:36 by vmartins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,7 +118,7 @@ t_list			*sort(t_option *option, t_list *list, char *path_files)
 
 	len = 0;
 	files = list;
-	if (option->t == 1 && ft_strcmp(path_files, "Hi") != 0)
+	if (option->t == 1 && ft_strcmp(path_files, "Hi"))
 		ft_sort_test(files, path_files);
 	tab = list_to_tab(files, &len);
 	if (option->t != 1)
